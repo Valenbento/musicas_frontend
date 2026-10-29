@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #222222;
+}
+
+header,
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #5b5bd6;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header a {
+    color: #5b5bd6;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#listaMusicas {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.musica {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.musica h2 {
+    margin: 0 0 6px;
+    font-size: 20px;
+}
+
+.musica .artista {
+    margin: 0 0 4px;
+    font-size: 15px;
+}
+
+.musica .detalhes {
+    margin: 0 0 12px;
+    font-size: 13px;
+    color: #666666;
+}
+
+.acoes {
+    display: flex;
+    gap: 8px;
+}
+
+.acoes .editar,
+.acoes .apagar {
+    padding: 6px 14px;
+    border-radius: 4px;
+    background: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.acoes .editar {
+    border: 1px solid #5b5bd6;
+    color: #5b5bd6;
+}
+
+.acoes .apagar {
+    border: 1px solid #d03a2f;
+    color: #d03a2f;
+}
+
+.acoes .editar:hover {
+    background: #5b5bd6;
+    color: #ffffff;
+}
+
+.acoes .apagar:hover {
+    background: #d03a2f;
+    color: #ffffff;
+}
